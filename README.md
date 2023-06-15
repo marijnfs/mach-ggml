@@ -1,5 +1,7 @@
 # mach/ggml: ggml using WebGPU compute
 
+SUPER EXPERIMENTAL, not working yet.
+
 ## Experimental
 
 This is an _experimental_ Mach library, according to our [stability guarantees](https://machengine.org/next/docs/libs/):
@@ -46,6 +48,16 @@ You may then `const ggml = @import("mach-ggml);` and use it.
 ### Usage
 
 For usage, see `example/main.zig`
+
+## Developing
+
+```sh
+git clone https://github.com/hexops/mach-ggml
+cd mach-ggml/
+zig build run
+```
+
+`example/main.zig` contains a minimal example application which uses the mach-ggml library; while `src/` contains the mach-ggml library itself.
 
 ## Join the community
 
